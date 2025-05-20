@@ -1,0 +1,129 @@
+/* Estilo global */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+h1, h2 {
+    margin-top: 0;
+}
+a {
+    text-decoration: none;
+}
+/* Cabeçalho */
+header {
+    background-color: #6200ea;
+    color: white;
+    padding: 1.5rem 1rem;
+    text-align: center;
+}
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+.menu-principal {
+    margin-top: 1rem;
+}
+.menu-principal .btn {
+    background-color: white;
+    color: #6200ea;
+    text-decoration: none;
+    padding: 0.6rem 1rem;
+    border-radius: 5px;
+    margin: 0 0.5rem;
+    font-weight: bold;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+.menu-principal .btn:hover {
+    background-color: #ddd;
+}
+main.conteudo-principal {
+    padding: 2rem;
+    text-align: center;
+}
+footer {
+    background-color: #eee;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 2rem;
+}
+form {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width: 400px;
+    margin: 2rem auto;
+}
+form h2 {
+    color: #6200ea;
+    text-align: center;
+    margin-bottom: 1.2rem;
+}
+.form-group {
+    margin-bottom: 1rem;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+input, select {
+    width: 100%;
+    padding: 0.6rem;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+}
+button {
+    width: 100%;
+    padding: 0.7rem;
+    background-color: #6200ea;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
+button:hover {
+    background-color: #3700b3;
+}
+.mensagem-sucesso {
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+.mensagem-sucesso h2 {
+    margin-bottom: 1rem;
+}
+.mensagem-sucesso p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+.btn-voltar {
+    display: inline-block;
+    padding: 0.7rem 1.2rem;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+.btn-voltar:hover {
+    background-color: #218838;
+}

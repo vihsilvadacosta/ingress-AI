@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Compra Realizada</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="mensagem-sucesso">
+        <h2>✅ Sucesso!</h2>
+        <p>{{ mensagem }}</p>
+        <a class="btn-voltar" href="{{ url_for('index') }}">Voltar à Página Inicial</a>
+    </div>
+</body>
+</html>

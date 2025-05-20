@@ -1,0 +1,11 @@
+user_id,session_duration,pages_visited,purchase_made,timestamp,acao_usuario
+1,180,5,0,2023-03-01,Login
+2,240,8,1,2023-03-01,Compra de Ingresso
+3,90,3,0,2023-03-02,Visualização de Ingressos
+4,300,10,1,2023-03-02,Compra de Ingresso
+5,45,2,0,2023-03-03,Cadastro
+6,120,4,0,2023-03-03,Login
+7,180,7,0,2023-03-04,Visualização de Ingressos
+8,90,3,0,2023-03-04,Visualização de Ingressos
+9,500,20,1,2023-03-05,Compra de Ingresso
+10,75,3,0,2023-03-05,Cadastro

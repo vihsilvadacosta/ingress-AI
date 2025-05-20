@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Plataforma de Ingressos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🎟️ Plataforma de Ingressos</h1>
+            <nav class="menu-principal">
+                <a href="{{ url_for('login') }}" class="btn">Login</a>
+                <a href="{{ url_for('cadastro') }}" class="btn">Cadastro</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="conteudo-principal">
+        <h2>Bem-vindo!</h2>
+        <p>Aqui você pode comprar ingressos, acessar sua conta e visualizar relatórios com inteligência artificial.</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Plataforma de Ingressos. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

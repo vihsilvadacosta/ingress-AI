@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Ingressos Disponíveis</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <header>
+        <h1>🎟️ Ingressos Disponíveis</h1>
+        <p>Escolha seu ingresso abaixo</p>
+    </header>
+
+    <main class="conteudo-principal container">
+
+        <!-- ✅ MENSAGEM DE COMPRA REALIZADA -->
+        {% if sucesso == "compra" %}
+            <p style="color: green; font-weight: bold; text-align: center;">
+                ✅ Compra realizada com sucesso!
+            </p>
+        {% endif %}
+
+        {% if ingressos %}
+            <div class="lista-ingressos">
+                {% for ingresso in ingressos %}
+                    <div class="card-ingresso" style="border: 1px solid #ddd; border-radius: 10px; padding: 1rem; margin: 1rem 0;">
+                        <h2>{{ ingresso['nome'] }}</h2>
+                        <p>Preço: R$ {{ ingresso['preco'] }}</p>
+                        <p>Descrição: {{ ingresso['descricao'] }}</p>
+                        <form method="POST" action="{{ url_for('comprar', id=ingresso['id']) }}">
+                            <button type="submit">Comprar</button>
+                        </form>
+                    </div>
+                {% endfor %}
+            </div>
+        {% else %}
+            <p>Nenhum ingresso disponível no momento.</p>
+        {% endif %}
+
+        <a class="btn-voltar" href="{{ url_for('index') }}">Voltar à Página Inicial</a>
+    </main>
+
+    <footer>
+        &copy; 2025 Plataforma de Ingressos. Todos os direitos reservados.
+    </footer>
+
+</body>
+</html>

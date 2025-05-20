@@ -1,6 +1,6 @@
 # 🎟️ IngressAI - Plataforma Inteligente de Ingressos
 
-**IngressAI** é uma plataforma de análise de logs reais de usuários com foco na visualização de comportamento e detecção de sessões suspeitas. O projeto utiliza dashboards interativos, banco de dados real (`SQLite`) e algoritmos de inteligência artificial para identificar padrões e anomalias no uso da plataforma de compra de ingressos.
+**IngressAI** é uma plataforma de análise de logs reais de usuários com foco na visualização de comportamento e detecção de sessões suspeitas. O projeto utiliza dashboards interativos, pipelines de logs, banco de dados real (`SQLite`) e algoritmos de inteligência artificial para identificar padrões e anomalias no uso da plataforma de compra de ingressos.
 
 ---
 

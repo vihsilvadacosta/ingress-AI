@@ -1,0 +1,24 @@
+
+# Ignorar caches e arquivos temporários
+__pycache__/
+*.py[cod]
+*.so
+*.log
+
+# Ignorar checkpoints do Jupyter
+.ipynb_checkpoints/
+
+# Ignorar ambientes virtuais
+venv/
+.env/
+
+# Arquivos de banco de dados e configurações locais (se desejar)
+*.sqlite3
+*.db
+
+# Arquivos do VSCode (se estiver usando)
+.vscode/
+
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db

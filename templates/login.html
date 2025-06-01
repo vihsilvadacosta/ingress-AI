@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
+</head>
+<body>
+
+    <div class="login-container">
+        <form method="POST" class="form-login">
+            <h2>Login</h2>
+
+            {% with messages = get_flashed_messages(with_categories=true) %}
+              {% if messages %}
+                {% for categoria, mensagem in messages %}
+                  {% if categoria == 'sucesso' %}
+                    <div class="mensagem-sucesso">{{ mensagem }}</div>
+                  {% elif categoria == 'erro' %}
+                    <div class="mensagem-erro">{{ mensagem }}</div>
+                  {% endif %}
+                {% endfor %}
+              {% endif %}
+            {% endwith %}
+
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input id="email" name="email" placeholder="E-mail" required type="email"/>
+            </div>
+
+            <div class="form-group">
+                <label for="senha">Senha:</label>
+                <input id="senha" name="senha" placeholder="Senha" required type="password"/>
+            </div>
+
+            <button type="submit">Entrar</button>
+        </form>
+    </div>
+
+</body>
+</html>

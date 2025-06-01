@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+<meta charset="utf-8"/>
+<title>Plataforma de Ingressos</title>
+<link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
+
+</head>
+<body>
+<!-- Cabeçalho -->
+<header>
+<div>{% if mensagem_erro %}<div class="erro">{{ mensagem_erro }}</div>{% endif %}
+{% if mensagem_sucesso %}<div class="sucesso">{{ mensagem_sucesso }}</div>{% endif %}</div><div class="container">
+<h1>🎟️ Plataforma de Ingressos</h1>
+<nav class="menu-principal">
+<a class="btn" href="{{ url_for('login') }}">Login</a>
+<a class="btn" href="{{ url_for('cadastro') }}">Cadastro</a>
+</nav>
+</div>
+</header>
+<!-- Conteúdo principal -->
+<main class="conteudo-principal">
+<h2>🎉 Bem-vindo à sua plataforma de ingressos!</h2>
+<p>Aqui você pode comprar ingressos, acessar sua conta e visualizar relatórios com inteligência artificial.</p>
+</main>
+<!-- Depoimentos -->
+<section class="depoimentos">
+<h3>O que dizem sobre a plataforma</h3>
+<div class="depoimentos-lista">
+<div class="depoimento">
+<p>🎟️ “Consegui meus ingressos em menos de 2 minutos! Plataforma simples e intuitiva.”</p>
+<span>— Ana Souza, estudante</span>
+</div>
+<div class="depoimento">
+<p>🎭 “Adorei a experiência! Comprei para o Teatro X e funcionou perfeitamente.”</p>
+<span>— Marcos Lima, designer</span>
+</div>
+<div class="depoimento">
+<p>🎉 “Fácil de usar e com ótimos eventos disponíveis. Recomendo para todos!”</p>
+<span>— Juliana Alves, professora</span>
+</div>
+</div>
+</section>
+<!-- Rodapé -->
+<footer>
+<p>© 2025 Plataforma de Ingressos. Todos os direitos reservados.</p>
+</footer>
+</body>
+</html>

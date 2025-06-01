@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+<meta charset="utf-8"/>
+<title>Compra Realizada</title>
+<link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet"/>
+
+</head>
+<body><div>{% if mensagem_erro %}<div class="erro">{{ mensagem_erro }}</div>{% endif %}
+{% if mensagem_sucesso %}<div class="sucesso">{{ mensagem_sucesso }}</div>{% endif %}</div>
+<section class="mensagem-sucesso">
+<h2>✅ Compra realizada com sucesso!</h2>
+<p><strong>Ingresso:</strong> {{ ingresso }}</p>
+<a class="btn-voltar" href="{{ url_for('comprar') }}">Voltar para a Página Inicial</a>
+</section>
+</body>
+</html>

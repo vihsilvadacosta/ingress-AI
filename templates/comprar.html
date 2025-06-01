@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Plataforma de Ingressos</title>
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet"/>
+</head>
+<body>
+    <div class="navbar">
+    <a href="{{ url_for('logout') }}" class="sair">Sair</a>
+</div>
+
+
+    <div class="container">
+        {% with messages = get_flashed_messages() %}
+          {% if messages %}
+            <div class="mensagem-sucesso">{{ messages[0] }}</div>
+          {% endif %}
+        {% endwith %}
+
+        <h1>Bem-vindo(a), {{ session['usuario']['nome'] }}!</h1>
+        <p style="text-align: center;">Escolha seu ingresso:</p>
+
+        <div class="ingressos">
+            {% for ingresso in ingressos %}
+                <div class="card-ingresso">
+    <h2>{{ ingresso['nome_evento'] }}</h2>
+    <p>{{ ingresso['descricao'] }}</p>
+    <p><strong>Data:</strong> {{ ingresso['data_evento'] }}</p>
+    <p><strong>Preço:</strong> R$ {{ ingresso['preco'] }}</p>
+
+    <form method="POST">
+        <input type="hidden" name="ingresso" value="{{ ingresso['id'] }}">
+        <button type="submit" class="btn-comprar">Comprar</button>
+    </form>
+</div>
+
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>

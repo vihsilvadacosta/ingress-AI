@@ -1,125 +1,127 @@
-<p align="center">
-  <img src="imagem/logoIngressAI.png" alt="Logo IngressAI" width="250"/>
-</p>
+# ![Logo](imagem/logoIngressAI.png)
 
-# 🎟️ Plataforma de Venda de Ingressos com Análise Inteligente de Usabilidade
+# 🧠 Ingress-AI: Plataforma de Ingressos com Inteligência Artificial
 
-Este projeto integra uma plataforma de venda de ingressos com uma suíte de dashboards interativos e pipelines que utilizam **Inteligência Artificial (IA)** para analisar **comportamentos de usuários**, detectar **anomalias em sessões** e identificar **possíveis problemas de usabilidade** da plataforma.
-
-## 👥 Autoria
-
-- Vitória Costa – Desenvolvimento da plataforma, backend, dashboards e pipelines com IA
-- Suelen Araujo – Coautoria no desenvolvimento e testes de usabilidade e sessões anômalas com IA
+Este projeto consiste em uma plataforma de compra de ingressos com funcionalidades aprimoradas por **Inteligência Artificial (IA)** para análise de sessões de usuários e comportamento de compras. Ele une o back-end em **Flask + SQLite** com dashboards interativos em **Gradio**, além de pipelines em **Jupyter Notebook**.
 
 ---
 
-## 🚀 Tecnologias Utilizadas
+## 🎯 Objetivo
 
-- **Flask** – Backend da plataforma de ingressos
-- **SQLite3** – Banco de dados leve e embutido
-- **HTML + CSS** – Interface visual da plataforma
-- **Plotly Express** – Visualização interativa dos dados
-- **Scikit-learn** – Algoritmo de IA (Isolation Forest)
-- **Gradio** – Dashboards com filtros e interação em tempo real
-- **Jupyter Notebook** – Desenvolvimento e execução dos pipelines analíticos
+Detectar sessões e comportamentos de compra **anômalos** a partir de logs de uso com técnicas de IA, auxiliando na **melhoria da usabilidade** da plataforma e na identificação de padrões fora do comum.
 
 ---
 
-## 🧠 IA aplicada à Análise de Usabilidade
+## ⚙️ Tecnologias Utilizadas
 
-Utilizamos o algoritmo **Isolation Forest** para detectar **sessões e comportamentos anômalos** com base nos seguintes fatores:
+- `Python 3`
+- `Flask`
+- `SQLite3`
+- `Gradio`
+- `Jupyter Notebook`
+- `Pandas`
+- `Plotly`
+- `Scikit-learn (Isolation Forest)`
 
-- **Duração da sessão** (em minutos)
-- **Número de ações realizadas**
-- **Padrões incomuns de compra**
+---
 
-> As classificações resultantes (`Normal`, `Anômala`) ajudam a identificar possíveis **gargalos de navegação**, **comportamentos fora do padrão** ou **ações que indicam dificuldades de uso**.
+## 📁 Estrutura do Projeto
+
+```
+📦 plataforma_ingressos_completa_com_ia/
+├── app.py                    # Backend Flask (compra, login, log)
+├── static/                   # CSS e imagens
+├── templates/                # HTML (login, cadastro, compra)
+├── database.db               # Banco de dados SQLite
+├── dashboard_gradio_ingressos.ipynb     # Dashboard de compras com IA
+├── dashboard_logs_interativo_com_anomalias.ipynb  # Dashboard de sessões com IA
+├── pipeline_logs_anomalias_ia_novo.ipynb          # Pipeline de sessões com IA
+├── pipeline_logs_ingressos_atualizado.ipynb       # Pipeline de compras com IA
+├── imagem/                  # Imagens do README e telas
+└── README.md
+```
+
+---
+
+## 🧪 Funcionalidades com IA
+
+### ✅ Sessões
+
+- Classificação automática usando `Isolation Forest`
+- Detecção de sessões com duração ou ações fora do padrão
+- Visualização de sessões por usuário e por classificação (Normal x Anômala)
+
+### 🎟️ Compras de Ingressos
+
+- Agrupamento por usuário e evento
+- Classificação de usuários com comportamento de compra atípico
+- Apoio à detecção de **problemas de usabilidade** ou uso indevido
 
 ---
 
 ## 📊 Dashboards Interativos
 
-1. **Dashboard de Sessões (IA)**
-   - Classifica sessões como `Normal` ou `Anômala`
-   - Exibe dispersão de duração vs. ações, sessões por usuário, e gráfico de classificação geral
-   - Interface construída com **Gradio**
+Disponíveis via **Gradio**:
 
-2. **Dashboard de Compras (IA)**
-   - Analisa padrões de compra com base em eventos, datas e usuários
-   - Exibe gráficos de barras, pizza e evolução temporal
-   - Também utiliza IA para destacar possíveis anomalias
-
-3. **Dashboard Jupyter**
-   - Alternativa interativa em notebooks para análise e apresentação acadêmica
-   - Permite visualização personalizada e execução modular
-
----
-
-## ⚙️ Como Executar o Projeto
-
-### 1. Clonar o repositório
-```bash
-git clone https://github.com/seu-usuario/plataforma-ingressos-ia.git
-cd plataforma-ingressos-ia
-```
-
-### 2. Instalar dependências
-Crie um ambiente virtual e instale os pacotes:
-```bash
-pip install -r requirements.txt
-```
-
-### 3. Executar simultaneamente:
-
-#### 🟢 Backend Flask
-```bash
-python app.py
-# Ou em porta customizada:
-# python app.py --port 5000
-```
-
-#### 🔵 Jupyter Notebooks (dashboards e pipelines)
-```bash
-jupyter notebook
-```
-
-Execute os arquivos:
-
-- `pipeline_logs_anomalias_ia_novo.ipynb`
 - `dashboard_logs_interativo_com_anomalias.ipynb`
-- `pipeline_logs_ingressos_atualizado.ipynb`
 - `dashboard_gradio_ingressos.ipynb`
 
+Com filtros por **ID**, **nome** e **email**, os gráficos incluem:
+
+- Duração da sessão vs ações
+- Compras por evento e por usuário
+- Gráficos de classificação com IA
+
 ---
 
-## 📁 Estrutura de Arquivos
+## 🚀 Execução Simultânea (Plataforma + Notebooks)
 
+Execute a plataforma Flask em uma porta (ex: `localhost:5000`) e os dashboards/notebooks em outra (ex: `localhost:7860`).
+
+Exemplo:
+```bash
+# Terminal 1
+python app.py
+
+# Terminal 2
+jupyter notebook dashboard_logs_interativo_com_anomalias.ipynb
 ```
-├── app.py                            # Plataforma de vendas (Flask)
-├── database.db                       # Banco de dados SQLite
-├── templates/                        # HTMLs da interface
-├── static/                           # CSS
-├── pipeline_logs_anomalias_ia_novo.ipynb
-├── dashboard_logs_interativo_com_anomalias.ipynb
-├── pipeline_logs_ingressos_atualizado.ipynb
-├── dashboard_gradio_ingressos.ipynb
-├── README.md
-```
 
 ---
 
-## 🎯 Objetivo Acadêmico
+## 👩‍💻 Autores
 
-Este projeto foi desenvolvido com foco em **melhoria da usabilidade** e **detecção de anomalias em logs de interação**, podendo ser apresentado em mostras tecnológicas e TCCs com ênfase em:
-
-- Experiência do Usuário (UX)
-- Inteligência Artificial aplicada a análise de logs
-- Segurança e monitoramento de plataformas web
+- Vitória Costa
+- Suelen Araujo
 
 ---
 
-## 📬 Contato
+## 📸 Demonstrações
 
-Para dúvidas ou colaborações:
-- **Vitória Costa**
-- **Suelen Araujo**
+### 🟣 Plataforma Web - Compra de Ingressos
+![Tela de Compras](imagem/telaCompras.png)
+
+### 🔐 Tela de Login
+![Login](imagem/login.png)
+
+### 📝 Tela de Cadastro
+![Cadastro](imagem/cadastro.png)
+
+### 🏠 Tela Inicial da Plataforma
+![Tela Inicial](imagem/telaInicial.png)
+
+---
+
+### 📊 Dashboard de Sessões com IA
+![Dashboard Sessões](imagem/dashboardSessoes.png)
+
+### 📈 Pipeline de Sessões com IA
+![Pipeline Sessões](imagem/pipelineSessoes.png)
+
+---
+
+### 🎟️ Dashboard de Compras com IA
+![Dashboard Compras](imagem/dashboardCompras.png)
+
+### 📉 Pipeline de Compras com IA
+![Pipeline Compras](imagem/pipelineIngressos.png)

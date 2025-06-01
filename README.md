@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="imagem/logoIngressAI.png" alt="Logo IngressAI" width="250"/>
+</p>
+
 # 🎟️ Plataforma de Venda de Ingressos com Análise Inteligente de Usabilidade
 
 Este projeto integra uma plataforma de venda de ingressos com uma suíte de dashboards interativos e pipelines que utilizam **Inteligência Artificial (IA)** para analisar **comportamentos de usuários**, detectar **anomalias em sessões** e identificar **possíveis problemas de usabilidade** da plataforma.

@@ -50,22 +50,24 @@ Além disso, também é feita análise de anomalias nas **compras de ingressos**
 
 ## 🧪 Execução Local
 
-1. Clone o repositório:
-```bash
-git clone https://github.com/vihsilvadacosta/ingress-AI.git
-```
+1. **Crie um ambiente virtual** (recomendado para isolar dependências):  
+   - No terminal, dentro da pasta do projeto, execute:  
+     ```bash
+     python -m venv venv
+     ```  
+   - Ative o ambiente virtual:  
+     - **Windows:**  
+       ```bash
+       venv\Scripts\activate
+       ```  
+     - **macOS/Linux:**  
+       ```bash
+       source venv/bin/activate
+       ```
 
-2. Execute o app Flask em uma porta (ex: 5000):
-```bash
-python app.py
-```
-
-3. Em outro terminal, execute os notebooks Jupyter com dashboards:
-```bash
-jupyter notebook
-```
-> Os dashboards devem rodar em **portas diferentes** (ex: 7860, 8888) para evitar conflitos.
-
+2. **Instale as dependências do projeto:**  
+   ```bash
+   pip install -r requirements.txt
 ---
 
 ## 📁 Estrutura do Projeto

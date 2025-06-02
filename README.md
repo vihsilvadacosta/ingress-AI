@@ -88,15 +88,23 @@ jupyter notebook
 ## 📸 Demonstração Visual
 
 ### 💡 Plataforma
+
+- Página inicial 
 - ![Tela Inicial](imagem/telaInicial.png)
+
+- Cadastro
 - ![Cadastro](imagem/cadastro.png)
+
+ - Login 
 - ![Login](imagem/login.png)
+
+- Listagem e compra de ingressos
 - ![Tela de Compras](imagem/telaCompras.png)
 
 ### 📊 Dashboards com IA
 - ![Dashboard de Compras](imagem/dashboardCompras.png)
 - ![Dashboard de Sessões](imagem/dashboardSessoes.png)
-- 
+
 ### 📊 Pipelines com IA
 - ![Pipeline de Ingressos](imagem/pipelineIngressos.png)
 - ![Pipeline de Sessões](imagem/pipelineSessoes.png)

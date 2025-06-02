@@ -95,8 +95,10 @@ jupyter notebook
 
 ### 📊 Dashboards com IA
 - ![Dashboard de Compras](imagem/dashboardCompras.png)
-- ![Pipeline de Ingressos](imagem/pipelineIngressos.png)
 - ![Dashboard de Sessões](imagem/dashboardSessoes.png)
+- 
+### 📊 Pipelines com IA
+- ![Pipeline de Ingressos](imagem/pipelineIngressos.png)
 - ![Pipeline de Sessões](imagem/pipelineSessoes.png)
 
 ---

@@ -1,127 +1,143 @@
-# ![Logo](imagem/logoIngressAI.png)
+# ![Logo do Projeto](imagens/logoIngressAI.png)
 
-# 🧠 Ingress-AI: Plataforma de Ingressos com Inteligência Artificial
+# 🎟️ Ingress-AI: Plataforma de Ingressos com Análise Inteligente
 
-Este projeto consiste em uma plataforma de compra de ingressos com funcionalidades aprimoradas por **Inteligência Artificial (IA)** para análise de sessões de usuários e comportamento de compras. Ele une o back-end em **Flask + SQLite** com dashboards interativos em **Gradio**, além de pipelines em **Jupyter Notebook**.
+Uma aplicação web para compra de ingressos com dashboards interativos e uso de **Inteligência Artificial** para análise de logs e **detecção de anomalias**, com foco em **melhoria da usabilidade**.
 
----
-
-## 🎯 Objetivo
-
-Detectar sessões e comportamentos de compra **anômalos** a partir de logs de uso com técnicas de IA, auxiliando na **melhoria da usabilidade** da plataforma e na identificação de padrões fora do comum.
+🎓 Este projeto foi desenvolvido como parte da Mostra de Tecnologia da Faculdade, com foco em demonstrar o uso de Inteligência Artificial na melhoria de plataformas web.
 
 ---
 
-## ⚙️ Tecnologias Utilizadas
+## 🚀 Tecnologias Utilizadas
 
-- `Python 3`
-- `Flask`
-- `SQLite3`
-- `Gradio`
-- `Jupyter Notebook`
-- `Pandas`
-- `Plotly`
-- `Scikit-learn (Isolation Forest)`
+- **Python** (Flask, Pandas, Scikit-learn)
+- **SQLite3**
+- **HTML/CSS** (páginas responsivas)
+- **Gradio** (interface interativa de dashboards)
+- **Plotly Express** (gráficos interativos)
+- **Jupyter Notebook** (pipelines com IA)
+
+---
+
+## 🎯 Objetivos
+
+- Criar uma plataforma de compra de ingressos com autenticação e fluxo real.
+- Registrar logs de navegação e compras dos usuários.
+- Aplicar **IA (Isolation Forest)** para detectar **comportamentos anômalos**.
+- Identificar **possíveis falhas de usabilidade** baseadas nos padrões de uso.
+- Exibir os dados de forma **interativa** via dashboards.
+
+---
+
+## 🧠 Inteligência Artificial e Usabilidade
+
+A aplicação utiliza a técnica de IA **Isolation Forest** para analisar logs e sessões, classificando interações como **normais** ou **anômalas**. Esses dados são usados para detectar possíveis problemas de usabilidade na plataforma, como interações frustradas ou falhas no processo de compra.
+
+Além disso, também é feita análise de anomalias nas **compras de ingressos**, identificando comportamentos incomuns que podem indicar erros no processo ou abusos.
+
+---
+
+## 💻 Funcionalidades
+
+- Cadastro e login de usuários.
+- Compra de ingressos com datas e preços reais.
+- Registro completo de logs por sessão.
+- Dashboards interativos para sessões e compras.
+- Detecção de anomalias com IA.
+- Exportação de dados para CSV e Excel.
+
+---
+
+## 🧪 Execução Local
+
+1. Clone o repositório:
+```bash
+git clone https://github.com/vihsilvadacosta/ingress-AI.git
+```
+
+2. Execute o app Flask em uma porta (ex: 5000):
+```bash
+python app.py
+```
+
+3. Em outro terminal, execute os notebooks Jupyter com dashboards:
+```bash
+jupyter notebook
+```
+> Os dashboards devem rodar em **portas diferentes** (ex: 7860, 8888) para evitar conflitos.
 
 ---
 
 ## 📁 Estrutura do Projeto
 
 ```
-📦 plataforma_ingressos_completa_com_ia/
-├── app.py                    # Backend Flask (compra, login, log)
-├── static/                   # CSS e imagens
-├── templates/                # HTML (login, cadastro, compra)
-├── database.db               # Banco de dados SQLite
-├── dashboard_gradio_ingressos.ipynb     # Dashboard de compras com IA
-├── dashboard_logs_interativo_com_anomalias.ipynb  # Dashboard de sessões com IA
-├── pipeline_logs_anomalias_ia_novo.ipynb          # Pipeline de sessões com IA
-├── pipeline_logs_ingressos_atualizado.ipynb       # Pipeline de compras com IA
-├── imagem/                  # Imagens do README e telas
-└── README.md
+├── app.py                      # Backend Flask
+├── database.db                 # Banco de dados SQLite
+├── static/                     # Estilos CSS
+├── templates/                  # Páginas HTML (login, cadastro, comprar)
+├── dashboards_melhorados/      # Notebooks com IA e visualizações
+│   ├── dashboard_gradio_ingressos.ipynb
+│   └── dashboard_logs_interativo_com_anomalias.ipynb
+    ├── pipeline_logs_anomalias_ia_novo.ipynb
+│   ├── pipeline_logs_ingressos_atualizado.ipynb
+├── imagens/                    # Imagens utilizadas no README
 ```
 
 ---
 
-## 🧪 Funcionalidades com IA
+## 📸 Demonstração Visual
 
-### ✅ Sessões
+### 💡 Plataforma
+- ![Tela Inicial](imagens/telaInicial.png)
+- ![Cadastro](imagens/cadastro.png)
+- ![Login](imagens/login.png)
+- ![Tela de Compras](imagens/telaCompras.png)
 
-- Classificação automática usando `Isolation Forest`
-- Detecção de sessões com duração ou ações fora do padrão
-- Visualização de sessões por usuário e por classificação (Normal x Anômala)
-
-### 🎟️ Compras de Ingressos
-
-- Agrupamento por usuário e evento
-- Classificação de usuários com comportamento de compra atípico
-- Apoio à detecção de **problemas de usabilidade** ou uso indevido
-
----
-
-## 📊 Dashboards Interativos
-
-Disponíveis via **Gradio**:
-
-- `dashboard_logs_interativo_com_anomalias.ipynb`
-- `dashboard_gradio_ingressos.ipynb`
-
-Com filtros por **ID**, **nome** e **email**, os gráficos incluem:
-
-- Duração da sessão vs ações
-- Compras por evento e por usuário
-- Gráficos de classificação com IA
+### 📊 Dashboards com IA
+- ![Dashboard de Compras](imagens/dashboardCompras.png)
+- ![Pipeline de Ingressos](imagens/pipelineIngressos.png)
+- ![Dashboard de Sessões](imagens/dashboardSessoes.png)
+- ![Pipeline de Sessões](imagens/pipelineSessoes.png)
 
 ---
 
-## 🚀 Execução Simultânea (Plataforma + Notebooks)
+## 👥 Equipe
 
-Execute a plataforma Flask em uma porta (ex: `localhost:5000`) e os dashboards/notebooks em outra (ex: `localhost:7860`).
-
-Exemplo:
-```bash
-# Terminal 1
-python app.py
-
-# Terminal 2
-jupyter notebook dashboard_logs_interativo_com_anomalias.ipynb
-```
+| Nome           | GitHub                                           |
+|----------------|--------------------------------------------------|
+| Vitória Costa  | [@vihsilvadacosta](https://github.com/vihsilvadacosta) |
+| Suelen Araujo  | -                     |
 
 ---
 
-## 👩‍💻 Autores
+## 🧠 Disciplinas Envolvidas
 
-- Vitória Costa
-- Suelen Araujo
-
----
-
-## 📸 Demonstrações
-
-### 🟣 Plataforma Web - Compra de Ingressos
-![Tela de Compras](imagem/telaCompras.png)
-
-### 🔐 Tela de Login
-![Login](imagem/login.png)
-
-### 📝 Tela de Cadastro
-![Cadastro](imagem/cadastro.png)
-
-### 🏠 Tela Inicial da Plataforma
-![Tela Inicial](imagem/telaInicial.png)
+- Linguagens Formais e Autômatos
+- Estrutura de Dados
+- Programação Web
+- Banco de Dados
 
 ---
 
-### 📊 Dashboard de Sessões com IA
-![Dashboard Sessões](imagem/dashboardSessoes.png)
+## 🏫 Informações Acadêmicas
 
-### 📈 Pipeline de Sessões com IA
-![Pipeline Sessões](imagem/pipelineSessoes.png)
+- **Universidade:** Universidade Braz Cubas  
+- **Curso:** Ciência da Computação  
+- **Semestre:** 7º  
+- **Período:** Noite  
+- **Professora orientadora:** Dra. Andréa Ono Sakai  
+- **Evento:** Mostra de Tecnologia – 1º Semestre de 2025  
+- **Local:** Laboratório 12  
+- **Datas:** 05 e 06 de junho de 2025
 
 ---
 
-### 🎟️ Dashboard de Compras com IA
-![Dashboard Compras](imagem/dashboardCompras.png)
+## 📄 Licença
 
-### 📉 Pipeline de Compras com IA
-![Pipeline Compras](imagem/pipelineIngressos.png)
+Este projeto foi desenvolvido para fins **acadêmicos** e **educacionais** como parte da Mostra de Tecnologia.
+
+---
+
+## 🙏 Agradecimentos
+
+Agradecemos à equipe docente e à coordenação do curso de Ciência da Computação pelo suporte e incentivo durante o desenvolvimento do projeto.

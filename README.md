@@ -1,4 +1,4 @@
-# ![Logo do Projeto](imagens/logoIngressAI.png)
+# ![Logo do Projeto](imagem/logoIngressAI.png)
 
 # 🎟️ Ingress-AI: Plataforma de Ingressos com Análise Inteligente
 
@@ -80,7 +80,7 @@ jupyter notebook
 │   └── dashboard_logs_interativo_com_anomalias.ipynb
     ├── pipeline_logs_anomalias_ia_novo.ipynb
 │   ├── pipeline_logs_ingressos_atualizado.ipynb
-├── imagens/                    # Imagens utilizadas no README
+├── imagem/                    # Imagens utilizadas no README
 ```
 
 ---
@@ -88,16 +88,16 @@ jupyter notebook
 ## 📸 Demonstração Visual
 
 ### 💡 Plataforma
-- ![Tela Inicial](imagens/telaInicial.png)
-- ![Cadastro](imagens/cadastro.png)
-- ![Login](imagens/login.png)
-- ![Tela de Compras](imagens/telaCompras.png)
+- ![Tela Inicial](imagem/telaInicial.png)
+- ![Cadastro](imagem/cadastro.png)
+- ![Login](imagem/login.png)
+- ![Tela de Compras](imagem/telaCompras.png)
 
 ### 📊 Dashboards com IA
-- ![Dashboard de Compras](imagens/dashboardCompras.png)
-- ![Pipeline de Ingressos](imagens/pipelineIngressos.png)
-- ![Dashboard de Sessões](imagens/dashboardSessoes.png)
-- ![Pipeline de Sessões](imagens/pipelineSessoes.png)
+- ![Dashboard de Compras](imagem/dashboardCompras.png)
+- ![Pipeline de Ingressos](imagem/pipelineIngressos.png)
+- ![Dashboard de Sessões](imagem/dashboardSessoes.png)
+- ![Pipeline de Sessões](imagem/pipelineSessoes.png)
 
 ---
 

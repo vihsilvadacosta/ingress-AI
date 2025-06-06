@@ -1,0 +1,40 @@
+﻿usuario_id,nome,email,acao,data_hora,ingresso_id,nome_evento,evento,data,classificacao
+1,nide,nidee@gmail.com,Compra do ingresso ID 1,2025-06-01 15:16:33,1,Show A,Show A,2025-06-01,Anômalo
+1,nide,nidee@gmail.com,Compra do ingresso ID 2,2025-06-01 15:16:35,2,Teatro X,Teatro X,2025-06-01,Anômalo
+1,nide,nidee@gmail.com,Compra do ingresso ID 3,2025-06-01 15:16:35,3,Festival Z,Festival Z,2025-06-01,Anômalo
+2,vi,vi@gmail.com,Compra do ingresso ID 3,2025-06-01 15:17:03,3,Festival Z,Festival Z,2025-06-01,Normal
+2,vi,vi@gmail.com,Compra do ingresso ID 3,2025-06-01 15:17:04,3,Festival Z,Festival Z,2025-06-01,Normal
+2,vi,vi@gmail.com,Compra do ingresso ID 3,2025-06-01 15:17:05,3,Festival Z,Festival Z,2025-06-01,Normal
+2,vi,vi@gmail.com,Compra do ingresso ID 3,2025-06-01 15:17:06,3,Festival Z,Festival Z,2025-06-01,Normal
+2,vi,vi@gmail.com,Compra do ingresso ID 3,2025-06-01 15:17:06,3,Festival Z,Festival Z,2025-06-01,Normal
+2,vi,vi@gmail.com,Compra do ingresso ID 3,2025-06-01 15:17:06,3,Festival Z,Festival Z,2025-06-01,Normal
+2,vi,vi@gmail.com,Compra do ingresso ID 1,2025-06-01 15:17:07,1,Show A,Show A,2025-06-01,Normal
+3,Matheus,mat@gmail.com,Compra do ingresso ID 1,2025-06-01 15:17:27,1,Show A,Show A,2025-06-01,Normal
+4,teste ,teste@gmail.com,Compra do ingresso ID 2,2025-06-01 16:39:55,2,Teatro X,Teatro X,2025-06-01,Anômalo
+4,teste ,teste@gmail.com,Compra do ingresso ID 2,2025-06-01 16:39:56,2,Teatro X,Teatro X,2025-06-01,Anômalo
+4,teste ,teste@gmail.com,Compra do ingresso ID 2,2025-06-01 16:39:56,2,Teatro X,Teatro X,2025-06-01,Anômalo
+4,teste ,teste@gmail.com,Compra do ingresso ID 2,2025-06-01 16:39:57,2,Teatro X,Teatro X,2025-06-01,Anômalo
+4,teste ,teste@gmail.com,Compra do ingresso ID 2,2025-06-01 16:39:57,2,Teatro X,Teatro X,2025-06-01,Anômalo
+4,teste ,teste@gmail.com,Compra do ingresso ID 2,2025-06-01 16:39:58,2,Teatro X,Teatro X,2025-06-01,Anômalo
+4,teste ,teste@gmail.com,Compra do ingresso ID 2,2025-06-01 16:39:58,2,Teatro X,Teatro X,2025-06-01,Anômalo
+4,teste ,teste@gmail.com,Compra do ingresso ID 2,2025-06-01 16:39:59,2,Teatro X,Teatro X,2025-06-01,Anômalo
+4,teste ,teste@gmail.com,Compra do ingresso ID 2,2025-06-01 16:39:59,2,Teatro X,Teatro X,2025-06-01,Anômalo
+4,teste ,teste@gmail.com,Compra do ingresso ID 2,2025-06-01 16:39:59,2,Teatro X,Teatro X,2025-06-01,Anômalo
+4,teste ,teste@gmail.com,Compra do ingresso ID 2,2025-06-01 16:40:00,2,Teatro X,Teatro X,2025-06-01,Anômalo
+4,teste ,teste@gmail.com,Compra do ingresso ID 2,2025-06-01 16:40:00,2,Teatro X,Teatro X,2025-06-01,Anômalo
+4,teste ,teste@gmail.com,Compra do ingresso ID 2,2025-06-01 16:40:01,2,Teatro X,Teatro X,2025-06-01,Anômalo
+4,teste ,teste@gmail.com,Compra do ingresso ID 2,2025-06-01 16:40:01,2,Teatro X,Teatro X,2025-06-01,Anômalo
+4,teste ,teste@gmail.com,Compra do ingresso ID 2,2025-06-01 16:40:01,2,Teatro X,Teatro X,2025-06-01,Anômalo
+4,teste ,teste@gmail.com,Compra do ingresso ID 2,2025-06-01 16:40:01,2,Teatro X,Teatro X,2025-06-01,Anômalo
+4,teste ,teste@gmail.com,Compra do ingresso ID 2,2025-06-01 16:40:02,2,Teatro X,Teatro X,2025-06-01,Anômalo
+4,teste ,teste@gmail.com,Compra do ingresso ID 2,2025-06-01 16:40:02,2,Teatro X,Teatro X,2025-06-01,Anômalo
+4,teste ,teste@gmail.com,Compra do ingresso ID 1,2025-06-01 16:58:09,1,Show A,Show A,2025-06-01,Anômalo
+5,bia,bia@gmail.com,Compra do ingresso ID 1,2025-06-01 17:26:12,1,Show A,Show A,2025-06-01,Normal
+5,bia,bia@gmail.com,Compra do ingresso ID 1,2025-06-01 17:26:13,1,Show A,Show A,2025-06-01,Normal
+5,bia,bia@gmail.com,Compra do ingresso ID 1,2025-06-01 17:26:13,1,Show A,Show A,2025-06-01,Normal
+5,bia,bia@gmail.com,Compra do ingresso ID 1,2025-06-01 17:26:14,1,Show A,Show A,2025-06-01,Normal
+5,bia,bia@gmail.com,Compra do ingresso ID 1,2025-06-01 17:26:14,1,Show A,Show A,2025-06-01,Normal
+5,bia,bia@gmail.com,Compra do ingresso ID 1,2025-06-01 17:26:15,1,Show A,Show A,2025-06-01,Normal
+9,aline,aline@gmail.com,Compra do ingresso ID 2,2025-06-06 12:05:48,2,Teatro X,Teatro X,2025-06-06,Normal
+10,vih,vih@gmail.com,Compra do ingresso ID 2,2025-06-06 13:17:39,2,Teatro X,Teatro X,2025-06-06,Normal
+11,cad,cad@gmail.com,Compra do ingresso ID 1,2025-06-06 13:26:46,1,Show A,Show A,2025-06-06,Normal
